@@ -15,7 +15,7 @@ index a23047a3b..c199b549a 100644
  
  	data->customer_id = nct6683_read16(data, NCT6683_REG_CUSTOMER_ID);
  
-+	pr_info("data->customer_id = %x\n", data->customer_id);
++	pr_info("data->customer_id = %x\n ", data->customer_id);
  	/* By default only instantiate driver if the customer ID is known */
  	switch (data->customer_id) {
  	case NCT6683_CUSTOMER_ID_INTEL:
